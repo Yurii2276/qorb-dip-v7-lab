@@ -327,8 +327,8 @@ async function checkSignal() {
   const telegramKey = result.signalDate + ":" + (result.signal ? "SIGNAL" : "WAIT");
 
   const shouldSend =
-    result.signal ||
-    (shouldSendStatus && state.lastTelegramKey !== telegramKey);
+    state.lastTelegramKey !== telegramKey &&
+    (result.signal || shouldSendStatus);
 
   if (shouldSend) {
     await sendTelegram(buildMessage(result));
