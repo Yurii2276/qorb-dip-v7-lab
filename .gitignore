@@ -1,0 +1,46 @@
+# Dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+package-lock.json
+
+# Environment variables / secrets
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Logs
+logs/
+*.log
+
+# Runtime state
+qorb_dip_live_state.json
+*.pid
+*.pid.lock
+
+# Backtest / optimizer outputs
+qorb_dip_v7_results.csv
+qorb_dip_v7_top_trades.csv
+
+# Replit / local
+.breakpoints
+.config/
+generated-icon.png
+
+# Old unused starter file
+index.js
+
+# Build/cache
+.cache/
+.parcel-cache/
+dist/
+coverage/
+.nyc_output/
+
+# OS / editor
+.DS_Store
+.vscode/

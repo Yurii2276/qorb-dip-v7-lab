@@ -1,0 +1,20 @@
+
+entrypoint = "qorb_dip_optimizer_v7.js"
+modules = ["nodejs-22"]
+hidden = [".config", "package-lock.json", "node_modules"]
+
+[nix]
+channel = "stable-24_11"
+
+[deployment]
+run = ["npm", "start"]
+deploymentTarget = "autoscale"
+ignorePorts = false
+
+[agent]
+expertMode = true
+
+[[ports]]
+localPort = 3000
+externalPort = 80
+

@@ -1,0 +1,10 @@
+node_modules
+.git
+.env
+*.log
+qorb_dip_v7_results.csv
+qorb_dip_v7_top_trades.csv
+qorb_dip_live_state.json
+package-lock.json
+generated-icon.png
+index.js

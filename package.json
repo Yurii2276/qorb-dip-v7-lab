@@ -1,0 +1,15 @@
+{
+  "name": "qorb-dip-v7-lab",
+  "version": "1.0.0",
+  "description": "QORB DIP v7 research and Telegram paper signal bot",
+  "main": "qorb_dip_live_v7.js",
+  "scripts": {
+    "start": "node qorb_dip_live_v7.js",
+    "optimize": "node qorb_dip_optimizer_v7.js",
+    "check": "node qorb_dip_current_check_v7.js",
+    "live": "node qorb_dip_live_v7.js"
+  },
+  "dependencies": {
+    "axios": "^1.7.9"
+  }
+}
